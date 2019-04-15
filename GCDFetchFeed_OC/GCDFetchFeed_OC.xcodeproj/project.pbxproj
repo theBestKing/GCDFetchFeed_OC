@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		122E194028929AE72F7982CB /* Pods_GCDFetchFeed_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1F8D3A337D98784710E289 /* Pods_GCDFetchFeed_OC.framework */; };
+		716B309022641E9E007A32E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B308F22641E9E007A32E7 /* AppDelegate.m */; };
+		716B309322641E9E007A32E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B309222641E9E007A32E7 /* ViewController.m */; };
+		716B309622641E9E007A32E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716B309422641E9E007A32E7 /* Main.storyboard */; };
+		716B309822641EAF007A32E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716B309722641EAF007A32E7 /* Assets.xcassets */; };
+		716B309B22641EAF007A32E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716B309922641EAF007A32E7 /* LaunchScreen.storyboard */; };
+		716B309E22641EAF007A32E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B309D22641EAF007A32E7 /* main.m */; };
+		716B30A822641EAF007A32E7 /* GCDFetchFeed_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30A722641EAF007A32E7 /* GCDFetchFeed_OCTests.m */; };
+		716B30B322641EAF007A32E7 /* GCDFetchFeed_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30B222641EAF007A32E7 /* GCDFetchFeed_OCUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		716B30A422641EAF007A32E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 716B308322641E9E007A32E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 716B308A22641E9E007A32E7;
+			remoteInfo = GCDFetchFeed_OC;
+		};
+		716B30AF22641EAF007A32E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 716B308322641E9E007A32E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 716B308A22641E9E007A32E7;
+			remoteInfo = GCDFetchFeed_OC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		716B308B22641E9E007A32E7 /* GCDFetchFeed_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDFetchFeed_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		716B308E22641E9E007A32E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		716B308F22641E9E007A32E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		716B309122641E9E007A32E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		716B309222641E9E007A32E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		716B309522641E9E007A32E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		716B309722641EAF007A32E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		716B309A22641EAF007A32E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		716B309C22641EAF007A32E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716B309D22641EAF007A32E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		716B30A322641EAF007A32E7 /* GCDFetchFeed_OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDFetchFeed_OCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		716B30A722641EAF007A32E7 /* GCDFetchFeed_OCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDFetchFeed_OCTests.m; sourceTree = "<group>"; };
+		716B30A922641EAF007A32E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716B30AE22641EAF007A32E7 /* GCDFetchFeed_OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDFetchFeed_OCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		716B30B222641EAF007A32E7 /* GCDFetchFeed_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDFetchFeed_OCUITests.m; sourceTree = "<group>"; };
+		716B30B422641EAF007A32E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1F8D3A337D98784710E289 /* Pods_GCDFetchFeed_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCDFetchFeed_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF07865928D42CCED491A971 /* Pods-GCDFetchFeed_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDFetchFeed_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC.debug.xcconfig"; sourceTree = "<group>"; };
+		F71303561BB5DB40D5E51D03 /* Pods-GCDFetchFeed_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDFetchFeed_OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		716B308822641E9E007A32E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122E194028929AE72F7982CB /* Pods_GCDFetchFeed_OC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716B30A022641EAF007A32E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716B30AB22641EAF007A32E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		716B308222641E9E007A32E7 = {
+			isa = PBXGroup;
+			children = (
+				716B308D22641E9E007A32E7 /* GCDFetchFeed_OC */,
+				716B30A622641EAF007A32E7 /* GCDFetchFeed_OCTests */,
+				716B30B122641EAF007A32E7 /* GCDFetchFeed_OCUITests */,
+				716B308C22641E9E007A32E7 /* Products */,
+				9E42D62F68E494833DC4A356 /* Pods */,
+				A3E1930BED1D333DFEB604CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		716B308C22641E9E007A32E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				716B308B22641E9E007A32E7 /* GCDFetchFeed_OC.app */,
+				716B30A322641EAF007A32E7 /* GCDFetchFeed_OCTests.xctest */,
+				716B30AE22641EAF007A32E7 /* GCDFetchFeed_OCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		716B308D22641E9E007A32E7 /* GCDFetchFeed_OC */ = {
+			isa = PBXGroup;
+			children = (
+				716B308E22641E9E007A32E7 /* AppDelegate.h */,
+				716B308F22641E9E007A32E7 /* AppDelegate.m */,
+				716B309122641E9E007A32E7 /* ViewController.h */,
+				716B309222641E9E007A32E7 /* ViewController.m */,
+				716B309422641E9E007A32E7 /* Main.storyboard */,
+				716B309722641EAF007A32E7 /* Assets.xcassets */,
+				716B309922641EAF007A32E7 /* LaunchScreen.storyboard */,
+				716B309C22641EAF007A32E7 /* Info.plist */,
+				716B309D22641EAF007A32E7 /* main.m */,
+			);
+			path = GCDFetchFeed_OC;
+			sourceTree = "<group>";
+		};
+		716B30A622641EAF007A32E7 /* GCDFetchFeed_OCTests */ = {
+			isa = PBXGroup;
+			children = (
+				716B30A722641EAF007A32E7 /* GCDFetchFeed_OCTests.m */,
+				716B30A922641EAF007A32E7 /* Info.plist */,
+			);
+			path = GCDFetchFeed_OCTests;
+			sourceTree = "<group>";
+		};
+		716B30B122641EAF007A32E7 /* GCDFetchFeed_OCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				716B30B222641EAF007A32E7 /* GCDFetchFeed_OCUITests.m */,
+				716B30B422641EAF007A32E7 /* Info.plist */,
+			);
+			path = GCDFetchFeed_OCUITests;
+			sourceTree = "<group>";
+		};
+		9E42D62F68E494833DC4A356 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF07865928D42CCED491A971 /* Pods-GCDFetchFeed_OC.debug.xcconfig */,
+				F71303561BB5DB40D5E51D03 /* Pods-GCDFetchFeed_OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3E1930BED1D333DFEB604CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA1F8D3A337D98784710E289 /* Pods_GCDFetchFeed_OC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		716B308A22641E9E007A32E7 /* GCDFetchFeed_OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716B30B722641EAF007A32E7 /* Build configuration list for PBXNativeTarget "GCDFetchFeed_OC" */;
+			buildPhases = (
+				8067CF0B5D60A508ABC13045 /* [CP] Check Pods Manifest.lock */,
+				716B308722641E9E007A32E7 /* Sources */,
+				716B308822641E9E007A32E7 /* Frameworks */,
+				716B308922641E9E007A32E7 /* Resources */,
+				17A0BC8C319BB9E882545204 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDFetchFeed_OC;
+			productName = GCDFetchFeed_OC;
+			productReference = 716B308B22641E9E007A32E7 /* GCDFetchFeed_OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		716B30A222641EAF007A32E7 /* GCDFetchFeed_OCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716B30BA22641EAF007A32E7 /* Build configuration list for PBXNativeTarget "GCDFetchFeed_OCTests" */;
+			buildPhases = (
+				716B309F22641EAF007A32E7 /* Sources */,
+				716B30A022641EAF007A32E7 /* Frameworks */,
+				716B30A122641EAF007A32E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				716B30A522641EAF007A32E7 /* PBXTargetDependency */,
+			);
+			name = GCDFetchFeed_OCTests;
+			productName = GCDFetchFeed_OCTests;
+			productReference = 716B30A322641EAF007A32E7 /* GCDFetchFeed_OCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		716B30AD22641EAF007A32E7 /* GCDFetchFeed_OCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 716B30BD22641EAF007A32E7 /* Build configuration list for PBXNativeTarget "GCDFetchFeed_OCUITests" */;
+			buildPhases = (
+				716B30AA22641EAF007A32E7 /* Sources */,
+				716B30AB22641EAF007A32E7 /* Frameworks */,
+				716B30AC22641EAF007A32E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				716B30B022641EAF007A32E7 /* PBXTargetDependency */,
+			);
+			name = GCDFetchFeed_OCUITests;
+			productName = GCDFetchFeed_OCUITests;
+			productReference = 716B30AE22641EAF007A32E7 /* GCDFetchFeed_OCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		716B308322641E9E007A32E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Hangzhou Hikvision Digital Technology Co.,Ltd.";
+				TargetAttributes = {
+					716B308A22641E9E007A32E7 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					716B30A222641EAF007A32E7 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 716B308A22641E9E007A32E7;
+					};
+					716B30AD22641EAF007A32E7 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 716B308A22641E9E007A32E7;
+					};
+				};
+			};
+			buildConfigurationList = 716B308622641E9E007A32E7 /* Build configuration list for PBXProject "GCDFetchFeed_OC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 716B308222641E9E007A32E7;
+			productRefGroup = 716B308C22641E9E007A32E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				716B308A22641E9E007A32E7 /* GCDFetchFeed_OC */,
+				716B30A222641EAF007A32E7 /* GCDFetchFeed_OCTests */,
+				716B30AD22641EAF007A32E7 /* GCDFetchFeed_OCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		716B308922641E9E007A32E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716B309B22641EAF007A32E7 /* LaunchScreen.storyboard in Resources */,
+				716B309822641EAF007A32E7 /* Assets.xcassets in Resources */,
+				716B309622641E9E007A32E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716B30A122641EAF007A32E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716B30AC22641EAF007A32E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17A0BC8C319BB9E882545204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DTCoreText/DTCoreText.framework",
+				"${BUILT_PRODUCTS_DIR}/DTFoundation/DTFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Ono/Ono.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCoreText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8067CF0B5D60A508ABC13045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCDFetchFeed_OC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		716B308722641E9E007A32E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716B309322641E9E007A32E7 /* ViewController.m in Sources */,
+				716B309E22641EAF007A32E7 /* main.m in Sources */,
+				716B309022641E9E007A32E7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716B309F22641EAF007A32E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716B30A822641EAF007A32E7 /* GCDFetchFeed_OCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716B30AA22641EAF007A32E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716B30B322641EAF007A32E7 /* GCDFetchFeed_OCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		716B30A522641EAF007A32E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 716B308A22641E9E007A32E7 /* GCDFetchFeed_OC */;
+			targetProxy = 716B30A422641EAF007A32E7 /* PBXContainerItemProxy */;
+		};
+		716B30B022641EAF007A32E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 716B308A22641E9E007A32E7 /* GCDFetchFeed_OC */;
+			targetProxy = 716B30AF22641EAF007A32E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		716B309422641E9E007A32E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				716B309522641E9E007A32E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		716B309922641EAF007A32E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				716B309A22641EAF007A32E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		716B30B522641EAF007A32E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		716B30B622641EAF007A32E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		716B30B822641EAF007A32E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF07865928D42CCED491A971 /* Pods-GCDFetchFeed_OC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				INFOPLIST_FILE = GCDFetchFeed_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikvision.GCDFetchFeed-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "共享及行业专用描述文件2019";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		716B30B922641EAF007A32E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71303561BB5DB40D5E51D03 /* Pods-GCDFetchFeed_OC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				INFOPLIST_FILE = GCDFetchFeed_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikvision.GCDFetchFeed-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "综合安防通配符";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		716B30BB22641EAF007A32E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				INFOPLIST_FILE = GCDFetchFeed_OCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikvision.GCDFetchFeed-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCDFetchFeed_OC.app/GCDFetchFeed_OC";
+			};
+			name = Debug;
+		};
+		716B30BC22641EAF007A32E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				INFOPLIST_FILE = GCDFetchFeed_OCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikvision.GCDFetchFeed-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GCDFetchFeed_OC.app/GCDFetchFeed_OC";
+			};
+			name = Release;
+		};
+		716B30BE22641EAF007A32E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				INFOPLIST_FILE = GCDFetchFeed_OCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikvision.GCDFetchFeed-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GCDFetchFeed_OC;
+			};
+			name = Debug;
+		};
+		716B30BF22641EAF007A32E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DHDUGG7JV;
+				INFOPLIST_FILE = GCDFetchFeed_OCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hikvision.GCDFetchFeed-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GCDFetchFeed_OC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		716B308622641E9E007A32E7 /* Build configuration list for PBXProject "GCDFetchFeed_OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716B30B522641EAF007A32E7 /* Debug */,
+				716B30B622641EAF007A32E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716B30B722641EAF007A32E7 /* Build configuration list for PBXNativeTarget "GCDFetchFeed_OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716B30B822641EAF007A32E7 /* Debug */,
+				716B30B922641EAF007A32E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716B30BA22641EAF007A32E7 /* Build configuration list for PBXNativeTarget "GCDFetchFeed_OCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716B30BB22641EAF007A32E7 /* Debug */,
+				716B30BC22641EAF007A32E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		716B30BD22641EAF007A32E7 /* Build configuration list for PBXNativeTarget "GCDFetchFeed_OCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716B30BE22641EAF007A32E7 /* Debug */,
+				716B30BF22641EAF007A32E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 716B308322641E9E007A32E7 /* Project object */;
+}
