@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		122E194028929AE72F7982CB /* Pods_GCDFetchFeed_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1F8D3A337D98784710E289 /* Pods_GCDFetchFeed_OC.framework */; };
 		716B309022641E9E007A32E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B308F22641E9E007A32E7 /* AppDelegate.m */; };
-		716B309322641E9E007A32E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B309222641E9E007A32E7 /* ViewController.m */; };
-		716B309622641E9E007A32E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716B309422641E9E007A32E7 /* Main.storyboard */; };
 		716B309822641EAF007A32E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716B309722641EAF007A32E7 /* Assets.xcassets */; };
 		716B309B22641EAF007A32E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 716B309922641EAF007A32E7 /* LaunchScreen.storyboard */; };
 		716B309E22641EAF007A32E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B309D22641EAF007A32E7 /* main.m */; };
 		716B30A822641EAF007A32E7 /* GCDFetchFeed_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30A722641EAF007A32E7 /* GCDFetchFeed_OCTests.m */; };
 		716B30B322641EAF007A32E7 /* GCDFetchFeed_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30B222641EAF007A32E7 /* GCDFetchFeed_OCUITests.m */; };
+		716B30C222642415007A32E7 /* SKYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30C122642415007A32E7 /* SKYRootViewController.m */; };
+		716B30C822642574007A32E7 /* SKYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30C722642574007A32E7 /* SKYNetManager.m */; };
+		716B30CF226427A0007A32E7 /* SKYFeedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30CE226427A0007A32E7 /* SKYFeedStore.m */; };
+		716B30D322642811007A32E7 /* SKYFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30D222642811007A32E7 /* SKYFeedModel.m */; };
+		716B30D6226431D3007A32E7 /* SKYRootDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30D5226431D3007A32E7 /* SKYRootDataSource.m */; };
+		716B30D922643279007A32E7 /* SKYRootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30D822643279007A32E7 /* SKYRootCell.m */; };
+		716B30DC226432A7007A32E7 /* SKYRootCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30DB226432A7007A32E7 /* SKYRootCellViewModel.m */; };
+		716B30E42264344A007A32E7 /* SKYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30E32264344A007A32E7 /* SKYImageView.m */; };
+		716B30E72264533E007A32E7 /* SKYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30E62264533E007A32E7 /* SKYLabel.m */; };
+		716B30EB226453AD007A32E7 /* SKYStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30EA226453AD007A32E7 /* SKYStyle.m */; };
+		716B30EF2264549D007A32E7 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30ED2264549C007A32E7 /* UIColor-Expanded.m */; };
+		716B30F222645857007A32E7 /* SKYTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30F122645857007A32E7 /* SKYTitleLabel.m */; };
+		716B30F5226458F1007A32E7 /* SKYContentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30F4226458F1007A32E7 /* SKYContentLabel.m */; };
+		716B30F82264595A007A32E7 /* SKYHighlightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30F72264595A007A32E7 /* SKYHighlightLabel.m */; };
+		716B30FC22645B41007A32E7 /* SKYSubContentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30FB22645B41007A32E7 /* SKYSubContentLabel.m */; };
+		716B310022645BFE007A32E7 /* SKYDividingLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30FF22645BFE007A32E7 /* SKYDividingLineView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +53,6 @@
 		716B308B22641E9E007A32E7 /* GCDFetchFeed_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDFetchFeed_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716B308E22641E9E007A32E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		716B308F22641E9E007A32E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		716B309122641E9E007A32E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		716B309222641E9E007A32E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		716B309522641E9E007A32E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		716B309722641EAF007A32E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716B309A22641EAF007A32E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		716B309C22641EAF007A32E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +63,39 @@
 		716B30AE22641EAF007A32E7 /* GCDFetchFeed_OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDFetchFeed_OCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		716B30B222641EAF007A32E7 /* GCDFetchFeed_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDFetchFeed_OCUITests.m; sourceTree = "<group>"; };
 		716B30B422641EAF007A32E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716B30C022642415007A32E7 /* SKYRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYRootViewController.h; sourceTree = "<group>"; };
+		716B30C122642415007A32E7 /* SKYRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYRootViewController.m; sourceTree = "<group>"; };
+		716B30C622642574007A32E7 /* SKYNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYNetManager.h; sourceTree = "<group>"; };
+		716B30C722642574007A32E7 /* SKYNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYNetManager.m; sourceTree = "<group>"; };
+		716B30CD226427A0007A32E7 /* SKYFeedStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYFeedStore.h; sourceTree = "<group>"; };
+		716B30CE226427A0007A32E7 /* SKYFeedStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYFeedStore.m; sourceTree = "<group>"; };
+		716B30D122642811007A32E7 /* SKYFeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYFeedModel.h; sourceTree = "<group>"; };
+		716B30D222642811007A32E7 /* SKYFeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYFeedModel.m; sourceTree = "<group>"; };
+		716B30D4226431D3007A32E7 /* SKYRootDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYRootDataSource.h; sourceTree = "<group>"; };
+		716B30D5226431D3007A32E7 /* SKYRootDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYRootDataSource.m; sourceTree = "<group>"; };
+		716B30D722643279007A32E7 /* SKYRootCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYRootCell.h; sourceTree = "<group>"; };
+		716B30D822643279007A32E7 /* SKYRootCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYRootCell.m; sourceTree = "<group>"; };
+		716B30DA226432A7007A32E7 /* SKYRootCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYRootCellViewModel.h; sourceTree = "<group>"; };
+		716B30DB226432A7007A32E7 /* SKYRootCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYRootCellViewModel.m; sourceTree = "<group>"; };
+		716B30E22264344A007A32E7 /* SKYImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYImageView.h; sourceTree = "<group>"; };
+		716B30E32264344A007A32E7 /* SKYImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYImageView.m; sourceTree = "<group>"; };
+		716B30E52264533E007A32E7 /* SKYLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYLabel.h; sourceTree = "<group>"; };
+		716B30E62264533E007A32E7 /* SKYLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYLabel.m; sourceTree = "<group>"; };
+		716B30E9226453AD007A32E7 /* SKYStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYStyle.h; sourceTree = "<group>"; };
+		716B30EA226453AD007A32E7 /* SKYStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYStyle.m; sourceTree = "<group>"; };
+		716B30ED2264549C007A32E7 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		716B30EE2264549D007A32E7 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		716B30F022645857007A32E7 /* SKYTitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYTitleLabel.h; sourceTree = "<group>"; };
+		716B30F122645857007A32E7 /* SKYTitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYTitleLabel.m; sourceTree = "<group>"; };
+		716B30F3226458F1007A32E7 /* SKYContentLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYContentLabel.h; sourceTree = "<group>"; };
+		716B30F4226458F1007A32E7 /* SKYContentLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYContentLabel.m; sourceTree = "<group>"; };
+		716B30F622645959007A32E7 /* SKYHighlightLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYHighlightLabel.h; sourceTree = "<group>"; };
+		716B30F72264595A007A32E7 /* SKYHighlightLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYHighlightLabel.m; sourceTree = "<group>"; };
+		716B30F922645A5A007A32E7 /* SKYCellViewImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYCellViewImport.h; sourceTree = "<group>"; };
+		716B30FA22645B41007A32E7 /* SKYSubContentLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYSubContentLabel.h; sourceTree = "<group>"; };
+		716B30FB22645B41007A32E7 /* SKYSubContentLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYSubContentLabel.m; sourceTree = "<group>"; };
+		716B30FE22645BFE007A32E7 /* SKYDividingLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYDividingLineView.h; sourceTree = "<group>"; };
+		716B30FF22645BFE007A32E7 /* SKYDividingLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYDividingLineView.m; sourceTree = "<group>"; };
 		DA1F8D3A337D98784710E289 /* Pods_GCDFetchFeed_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCDFetchFeed_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF07865928D42CCED491A971 /* Pods-GCDFetchFeed_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDFetchFeed_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC.debug.xcconfig"; sourceTree = "<group>"; };
 		F71303561BB5DB40D5E51D03 /* Pods-GCDFetchFeed_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDFetchFeed_OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,9 +154,9 @@
 			children = (
 				716B308E22641E9E007A32E7 /* AppDelegate.h */,
 				716B308F22641E9E007A32E7 /* AppDelegate.m */,
-				716B309122641E9E007A32E7 /* ViewController.h */,
-				716B309222641E9E007A32E7 /* ViewController.m */,
-				716B309422641E9E007A32E7 /* Main.storyboard */,
+				716B30CC226425BB007A32E7 /* Vendors */,
+				716B30E12264342A007A32E7 /* ViewComponent */,
+				716B30C52264244D007A32E7 /* Feeds */,
 				716B309722641EAF007A32E7 /* Assets.xcassets */,
 				716B309922641EAF007A32E7 /* LaunchScreen.storyboard */,
 				716B309C22641EAF007A32E7 /* Info.plist */,
@@ -137,6 +181,124 @@
 				716B30B422641EAF007A32E7 /* Info.plist */,
 			);
 			path = GCDFetchFeed_OCUITests;
+			sourceTree = "<group>";
+		};
+		716B30C322642421007A32E7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				716B30C022642415007A32E7 /* SKYRootViewController.h */,
+				716B30C122642415007A32E7 /* SKYRootViewController.m */,
+				716B30D4226431D3007A32E7 /* SKYRootDataSource.h */,
+				716B30D5226431D3007A32E7 /* SKYRootDataSource.m */,
+				716B30D722643279007A32E7 /* SKYRootCell.h */,
+				716B30D822643279007A32E7 /* SKYRootCell.m */,
+				716B30DA226432A7007A32E7 /* SKYRootCellViewModel.h */,
+				716B30DB226432A7007A32E7 /* SKYRootCellViewModel.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		716B30C42264242E007A32E7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				716B30C322642421007A32E7 /* Root */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		716B30C52264244D007A32E7 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				716B30C42264242E007A32E7 /* ViewController */,
+				716B30D0226427A8007A32E7 /* Store */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		716B30C922642581007A32E7 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				716B30C622642574007A32E7 /* SKYNetManager.h */,
+				716B30C722642574007A32E7 /* SKYNetManager.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		716B30CC226425BB007A32E7 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				716B30C922642581007A32E7 /* Net */,
+				716B30EC226453B3007A32E7 /* Style */,
+				716B30FD22645BCC007A32E7 /* HeaderFile */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		716B30D0226427A8007A32E7 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				716B30D122642811007A32E7 /* SKYFeedModel.h */,
+				716B30D222642811007A32E7 /* SKYFeedModel.m */,
+				716B30CD226427A0007A32E7 /* SKYFeedStore.h */,
+				716B30CE226427A0007A32E7 /* SKYFeedStore.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		716B30E022643412007A32E7 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				716B30E22264344A007A32E7 /* SKYImageView.h */,
+				716B30E32264344A007A32E7 /* SKYImageView.m */,
+				716B30FE22645BFE007A32E7 /* SKYDividingLineView.h */,
+				716B30FF22645BFE007A32E7 /* SKYDividingLineView.m */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		716B30E12264342A007A32E7 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				716B30E022643412007A32E7 /* ListView */,
+				716B30E82264534A007A32E7 /* Label */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		716B30E82264534A007A32E7 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				716B30E52264533E007A32E7 /* SKYLabel.h */,
+				716B30E62264533E007A32E7 /* SKYLabel.m */,
+				716B30F022645857007A32E7 /* SKYTitleLabel.h */,
+				716B30F122645857007A32E7 /* SKYTitleLabel.m */,
+				716B30F3226458F1007A32E7 /* SKYContentLabel.h */,
+				716B30F4226458F1007A32E7 /* SKYContentLabel.m */,
+				716B30F622645959007A32E7 /* SKYHighlightLabel.h */,
+				716B30F72264595A007A32E7 /* SKYHighlightLabel.m */,
+				716B30FA22645B41007A32E7 /* SKYSubContentLabel.h */,
+				716B30FB22645B41007A32E7 /* SKYSubContentLabel.m */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		716B30EC226453B3007A32E7 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				716B30EE2264549D007A32E7 /* UIColor-Expanded.h */,
+				716B30ED2264549C007A32E7 /* UIColor-Expanded.m */,
+				716B30E9226453AD007A32E7 /* SKYStyle.h */,
+				716B30EA226453AD007A32E7 /* SKYStyle.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		716B30FD22645BCC007A32E7 /* HeaderFile */ = {
+			isa = PBXGroup;
+			children = (
+				716B30F922645A5A007A32E7 /* SKYCellViewImport.h */,
+			);
+			path = HeaderFile;
 			sourceTree = "<group>";
 		};
 		9E42D62F68E494833DC4A356 /* Pods */ = {
@@ -220,6 +382,7 @@
 		716B308322641E9E007A32E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SKY;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Hangzhou Hikvision Digital Technology Co.,Ltd.";
 				TargetAttributes = {
@@ -263,7 +426,6 @@
 			files = (
 				716B309B22641EAF007A32E7 /* LaunchScreen.storyboard in Resources */,
 				716B309822641EAF007A32E7 /* Assets.xcassets in Resources */,
-				716B309622641E9E007A32E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +509,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716B309322641E9E007A32E7 /* ViewController.m in Sources */,
+				716B30E72264533E007A32E7 /* SKYLabel.m in Sources */,
+				716B30C222642415007A32E7 /* SKYRootViewController.m in Sources */,
+				716B30D322642811007A32E7 /* SKYFeedModel.m in Sources */,
+				716B310022645BFE007A32E7 /* SKYDividingLineView.m in Sources */,
+				716B30DC226432A7007A32E7 /* SKYRootCellViewModel.m in Sources */,
+				716B30E42264344A007A32E7 /* SKYImageView.m in Sources */,
 				716B309E22641EAF007A32E7 /* main.m in Sources */,
+				716B30D922643279007A32E7 /* SKYRootCell.m in Sources */,
+				716B30EF2264549D007A32E7 /* UIColor-Expanded.m in Sources */,
+				716B30F222645857007A32E7 /* SKYTitleLabel.m in Sources */,
+				716B30D6226431D3007A32E7 /* SKYRootDataSource.m in Sources */,
+				716B30CF226427A0007A32E7 /* SKYFeedStore.m in Sources */,
+				716B30EB226453AD007A32E7 /* SKYStyle.m in Sources */,
+				716B30F82264595A007A32E7 /* SKYHighlightLabel.m in Sources */,
+				716B30C822642574007A32E7 /* SKYNetManager.m in Sources */,
+				716B30F5226458F1007A32E7 /* SKYContentLabel.m in Sources */,
 				716B309022641E9E007A32E7 /* AppDelegate.m in Sources */,
+				716B30FC22645B41007A32E7 /* SKYSubContentLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,14 +562,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		716B309422641E9E007A32E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				716B309522641E9E007A32E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		716B309922641EAF007A32E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
