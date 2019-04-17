@@ -17,5 +17,6 @@
 #import "SKYHighlightLabel.h"
 #import "SKYImageView.h"
 #import "SKYDividingLineView.h"
+#import "UIButton+SKYBackgroundColor.h"
 
 #endif /* SKYCellViewImport_h */

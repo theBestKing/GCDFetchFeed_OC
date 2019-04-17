@@ -12,10 +12,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SKYRootCellDelegate;
+
 @interface SKYRootCell : UIView
+
+@property (nonatomic, weak) id <SKYRootCellDelegate> delegate;
 
 - (instancetype)initWithViewModel:(SKYRootCellViewModel *)viewModel;
 - (void)updateWithViewModel:(SKYRootCellViewModel *)viewModel;
+
+@end
+
+@protocol SKYRootCellDelegate <NSObject>
+
+@optional
+- (void)skyRootCellView:(SKYRootCell *)cell clickWithFeedModel:(SKYFeedModel *)feedModel;
 
 @end
 

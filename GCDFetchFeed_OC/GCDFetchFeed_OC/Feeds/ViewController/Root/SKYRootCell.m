@@ -15,6 +15,8 @@
 @property (nonatomic, strong) SKYTitleLabel *titleLabel;
 @property (nonatomic, strong) SKYContentLabel *contentLabel;
 @property (nonatomic, strong) SKYHighlightLabel *highlightLabel;
+@property (nonatomic, strong) SKYFeedModel *feedModel;
+@property (nonatomic, strong) UIButton *clickButton;
 
 @end
 
@@ -44,11 +46,16 @@
     [self addSubview:self.titleLabel];
     [self addSubview:self.contentLabel];
     [self addSubview:self.highlightLabel];
+    [self addSubview:self.clickButton];
 }
 
 #pragma mark - Layout Subviews
 
 - (void)layoutSubviews {
+    [self.clickButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.bottom.equalTo(self);
+    }];
+    
     [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.equalTo(self).offset([SKYStyle floatMarginMassive]);
         make.size.mas_equalTo(CGSizeMake(30, 30));
@@ -67,6 +74,14 @@
     }];
 }
 
+#pragma mark - Event Response
+
+- (void)clickButtonDidTapped:(UIButton *)sender {
+    if ([self.delegate respondsToSelector:@selector(skyRootCellView:clickWithFeedModel:)]) {
+        [self.delegate skyRootCellView:self clickWithFeedModel:self.feedModel];
+    }
+}
+
 #pragma mark - Public Methods
 
 - (void)updateWithViewModel:(SKYRootCellViewModel *)viewModel {
@@ -74,9 +89,10 @@
     self.contentLabel.text = viewModel.contentString;
     [self.iconImageView updateWithImageWebUrl:viewModel.iconUrl];
     self.highlightLabel.text = viewModel.highlightString;
+    self.feedModel = viewModel.feedModel;
 }
 
-#pragma mark - Getter and Setter
+#pragma mark - Setter and Getter
 
 - (SKYImageView *)iconImageView {
     if (!_iconImageView) {
@@ -106,6 +122,15 @@
         _highlightLabel.textAlignment = NSTextAlignmentRight;
     }
     return _highlightLabel;
+}
+
+- (UIButton *)clickButton {
+    if (!_clickButton) {
+        _clickButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_clickButton setBackgroundColor:[SKYStyle colorBlackLightAlpha] forState:UIControlStateHighlighted];
+        [_clickButton addTarget:self action:@selector(clickButtonDidTapped:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _clickButton;
 }
 
 @end

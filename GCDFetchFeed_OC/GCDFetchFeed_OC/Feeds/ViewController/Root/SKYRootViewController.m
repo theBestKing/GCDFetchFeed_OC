@@ -15,11 +15,13 @@
 #import "SKYRootDataSource.h"
 #import "SKYNotificationConst.h"
 #import "SKYRootViewController.h"
+#import "SKYFeedListViewController.h"
 
 static NSString * const rootViewControllerIdentifier = @"SKYRootViewControllerCell";
 
 @interface SKYRootViewController ()
 <
+SKYRootCellDelegate,
 UITableViewDelegate,
 UITableViewDataSource
 >
@@ -80,6 +82,19 @@ UITableViewDataSource
     [[SKYNetManager shareInstance] fetchAllFeedsWithModelArray:self.feeds];
 }
 
+#pragma mark - UITableView Delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
+}
+
+#pragma mark - SKYRootCell Delegate
+
+- (void)skyRootCellView:(SKYRootCell *)cell clickWithFeedModel:(SKYFeedModel *)feedModel {
+    SKYFeedListViewController *feedListViewController = [[SKYFeedListViewController alloc] initWithFeedModel:feedModel];
+    [self.navigationController pushViewController:feedListViewController animated:YES];
+}
+
 #pragma mark - UITableView DataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -99,9 +114,12 @@ UITableViewDataSource
     SKYRootCell *rootCell = (SKYRootCell *)[cell viewWithTag:123432];
     if (!rootCell) {
         rootCell = [[SKYRootCell alloc] init];
-        rootCell.frame = CGRectMake(0, 0, self.view.bounds.size.width, 70);
         rootCell.tag = 123432;
+        rootCell.delegate = self;
         [cell.contentView addSubview:rootCell];
+        [rootCell mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.bottom.equalTo(cell.contentView);
+        }];
     }
     
     SKYFeedModel *model = self.feeds[indexPath.row];
@@ -111,15 +129,10 @@ UITableViewDataSource
     viewModel.iconUrl = model.imageUrl;
     NSUInteger itemsCount = model.items.count;
     viewModel.highlightString = [NSString stringWithFormat:@"%lu条", (unsigned long)itemsCount];
+    viewModel.feedModel = model;
     [rootCell updateWithViewModel:viewModel];
     
     return cell;
-}
-
-#pragma mark - UITableView Delegate
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 70;
 }
 
 #pragma mark - Private Methods
@@ -142,7 +155,7 @@ UITableViewDataSource
     NSLog(@"fetch complete");
 }
 
-#pragma mark - Getter and Setter
+#pragma mark - Setter and Getter
 
 - (SKYRootDataSource *)dataSource {
     if (!_dataSource) {

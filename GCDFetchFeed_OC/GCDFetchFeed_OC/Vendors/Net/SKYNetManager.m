@@ -64,7 +64,7 @@
     });
 }
 
-#pragma mark - Getter and Setter
+#pragma mark - Setter and Getter
 
 - (SKYFeedStore *)feedStore {
     if (!_feedStore) {

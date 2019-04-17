@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)colorGrayLight;
 + (UIColor *)colorGrayDark;
 + (UIColor *)colorOrangeLight;
++ (UIColor *)colorBlackLightAlpha;
 
 // CGFloat
 + (CGFloat)floatMarginMassive;              /**< 视图间距--大 */

@@ -42,6 +42,10 @@
     return [UIColor colorWithHexString:@"ff9933"];
 }
 
++ (UIColor *)colorBlackLightAlpha {
+    return [[UIColor colorWithHexString:@"000000"] colorWithAlphaComponent:0.05];
+}
+
 #pragma mark - CGFloat
 
 + (CGFloat)floatMarginMassive {

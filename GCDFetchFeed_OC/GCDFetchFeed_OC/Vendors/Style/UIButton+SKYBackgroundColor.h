@@ -1,5 +1,5 @@
 //
-//  SKYFeedListViewController.h
+//  UIButton+SKYBackgroundColor.h
 //  GCDFetchFeed_OC
 //
 //  Created by sunjinyang on 2019/4/17.
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SKYFeedModel;
+@interface UIButton (SKYBackgroundColor)
 
-@interface SKYFeedListViewController : UIViewController
-
-- (instancetype)initWithFeedModel:(SKYFeedModel *)feedModel;
+- (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state;
 
 @end
 

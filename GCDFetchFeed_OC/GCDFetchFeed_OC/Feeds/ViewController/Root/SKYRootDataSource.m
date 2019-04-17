@@ -10,7 +10,7 @@
 
 @implementation SKYRootDataSource
 
-#pragma mark - Getter and Setter
+#pragma mark - Setter and Getter
 
 - (NSMutableArray *)modelArray {
     if (!_modelArray) {

@@ -12,7 +12,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SKYFeedListCellDelegate;
+
 @interface SKYFeedListCell : UIView
+
+@property (nonatomic, weak) id <SKYFeedListCellDelegate> delegate;
+
+- (instancetype)initWithViewModel:(SKYFeedListCellViewModel *)viewModel;
+- (void)updateWithViewModel:(SKYFeedListCellViewModel *)viewModel;
+
+@end
+
+@protocol SKYFeedListCellDelegate <NSObject>
+
+@optional
+- (void)skyFeedListCellView:(SKYFeedListCell *)cell clickWithItemModel:(SKYFeedItemModel *)itemModel;
 
 @end
 

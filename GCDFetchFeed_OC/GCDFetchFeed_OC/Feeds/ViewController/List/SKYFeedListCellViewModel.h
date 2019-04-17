@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SKYFeedModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SKYFeedListCellViewModel : NSObject
+
+@property (nonatomic, copy) NSString *titleString;
+@property (nonatomic, copy) NSString *contentString;
+@property (nonatomic, strong) SKYFeedItemModel *itemModel;
+@property (nonatomic, assign) CGFloat cellHeight;
 
 @end
 

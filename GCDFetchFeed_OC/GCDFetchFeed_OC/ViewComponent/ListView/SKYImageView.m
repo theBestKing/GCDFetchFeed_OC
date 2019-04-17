@@ -100,7 +100,7 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:webUrl] placeholderImage:placeholderImage];
 }
 
-#pragma mark - Getter and Setter
+#pragma mark - Setter and Getter
 
 - (UIImageView *)imageView {
     if (!_imageView) {

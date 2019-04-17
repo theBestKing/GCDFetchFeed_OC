@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SKYFeedModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SKYRootCellViewModel : NSObject
@@ -16,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *contentString;
 @property (nonatomic, copy) NSString *iconUrl;
 @property (nonatomic, copy) NSString *highlightString;
+@property (nonatomic, strong) SKYFeedModel *feedModel;
 
 @end
 
