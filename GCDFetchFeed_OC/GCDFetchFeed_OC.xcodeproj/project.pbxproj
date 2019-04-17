@@ -30,6 +30,9 @@
 		716B30F82264595A007A32E7 /* SKYHighlightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30F72264595A007A32E7 /* SKYHighlightLabel.m */; };
 		716B30FC22645B41007A32E7 /* SKYSubContentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30FB22645B41007A32E7 /* SKYSubContentLabel.m */; };
 		716B310022645BFE007A32E7 /* SKYDividingLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B30FF22645BFE007A32E7 /* SKYDividingLineView.m */; };
+		716B310B2266BAEA007A32E7 /* SKYFeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B310A2266BAEA007A32E7 /* SKYFeedListViewController.m */; };
+		716B310F2266BB33007A32E7 /* SKYFeedListCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B310E2266BB33007A32E7 /* SKYFeedListCellViewModel.m */; };
+		716B31122266BB48007A32E7 /* SKYFeedListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B31112266BB48007A32E7 /* SKYFeedListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,13 @@
 		716B30FB22645B41007A32E7 /* SKYSubContentLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYSubContentLabel.m; sourceTree = "<group>"; };
 		716B30FE22645BFE007A32E7 /* SKYDividingLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYDividingLineView.h; sourceTree = "<group>"; };
 		716B30FF22645BFE007A32E7 /* SKYDividingLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYDividingLineView.m; sourceTree = "<group>"; };
+		716B31092266BAEA007A32E7 /* SKYFeedListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYFeedListViewController.h; sourceTree = "<group>"; };
+		716B310A2266BAEA007A32E7 /* SKYFeedListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYFeedListViewController.m; sourceTree = "<group>"; };
+		716B310D2266BB33007A32E7 /* SKYFeedListCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYFeedListCellViewModel.h; sourceTree = "<group>"; };
+		716B310E2266BB33007A32E7 /* SKYFeedListCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYFeedListCellViewModel.m; sourceTree = "<group>"; };
+		716B31102266BB48007A32E7 /* SKYFeedListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYFeedListCell.h; sourceTree = "<group>"; };
+		716B31112266BB48007A32E7 /* SKYFeedListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKYFeedListCell.m; sourceTree = "<group>"; };
+		716B31132266BE39007A32E7 /* SKYNotificationConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKYNotificationConst.h; sourceTree = "<group>"; };
 		DA1F8D3A337D98784710E289 /* Pods_GCDFetchFeed_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCDFetchFeed_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF07865928D42CCED491A971 /* Pods-GCDFetchFeed_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDFetchFeed_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC.debug.xcconfig"; sourceTree = "<group>"; };
 		F71303561BB5DB40D5E51D03 /* Pods-GCDFetchFeed_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDFetchFeed_OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCDFetchFeed_OC/Pods-GCDFetchFeed_OC.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				716B30C322642421007A32E7 /* Root */,
+				716B310C2266BAF1007A32E7 /* List */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 				716B30C922642581007A32E7 /* Net */,
 				716B30EC226453B3007A32E7 /* Style */,
 				716B30FD22645BCC007A32E7 /* HeaderFile */,
+				716B31142266BE42007A32E7 /* Notification */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -299,6 +311,27 @@
 				716B30F922645A5A007A32E7 /* SKYCellViewImport.h */,
 			);
 			path = HeaderFile;
+			sourceTree = "<group>";
+		};
+		716B310C2266BAF1007A32E7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				716B31092266BAEA007A32E7 /* SKYFeedListViewController.h */,
+				716B310A2266BAEA007A32E7 /* SKYFeedListViewController.m */,
+				716B310D2266BB33007A32E7 /* SKYFeedListCellViewModel.h */,
+				716B310E2266BB33007A32E7 /* SKYFeedListCellViewModel.m */,
+				716B31102266BB48007A32E7 /* SKYFeedListCell.h */,
+				716B31112266BB48007A32E7 /* SKYFeedListCell.m */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		716B31142266BE42007A32E7 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				716B31132266BE39007A32E7 /* SKYNotificationConst.h */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		9E42D62F68E494833DC4A356 /* Pods */ = {
@@ -510,12 +543,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				716B30E72264533E007A32E7 /* SKYLabel.m in Sources */,
+				716B310B2266BAEA007A32E7 /* SKYFeedListViewController.m in Sources */,
 				716B30C222642415007A32E7 /* SKYRootViewController.m in Sources */,
 				716B30D322642811007A32E7 /* SKYFeedModel.m in Sources */,
 				716B310022645BFE007A32E7 /* SKYDividingLineView.m in Sources */,
 				716B30DC226432A7007A32E7 /* SKYRootCellViewModel.m in Sources */,
 				716B30E42264344A007A32E7 /* SKYImageView.m in Sources */,
 				716B309E22641EAF007A32E7 /* main.m in Sources */,
+				716B310F2266BB33007A32E7 /* SKYFeedListCellViewModel.m in Sources */,
 				716B30D922643279007A32E7 /* SKYRootCell.m in Sources */,
 				716B30EF2264549D007A32E7 /* UIColor-Expanded.m in Sources */,
 				716B30F222645857007A32E7 /* SKYTitleLabel.m in Sources */,
@@ -525,6 +560,7 @@
 				716B30F82264595A007A32E7 /* SKYHighlightLabel.m in Sources */,
 				716B30C822642574007A32E7 /* SKYNetManager.m in Sources */,
 				716B30F5226458F1007A32E7 /* SKYContentLabel.m in Sources */,
+				716B31122266BB48007A32E7 /* SKYFeedListCell.m in Sources */,
 				716B309022641E9E007A32E7 /* AppDelegate.m in Sources */,
 				716B30FC22645B41007A32E7 /* SKYSubContentLabel.m in Sources */,
 			);

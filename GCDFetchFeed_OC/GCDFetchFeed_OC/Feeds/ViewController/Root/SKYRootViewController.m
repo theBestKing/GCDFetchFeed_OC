@@ -8,12 +8,12 @@
 
 #import <Ono/Ono.h>
 #import <Masonry/Masonry.h>
-#import <SDWebImage/UIImageView+WebCache.h>
 
 #import "SKYRootCell.h"
 #import "SKYFeedStore.h"
 #import "SKYNetManager.h"
 #import "SKYRootDataSource.h"
+#import "SKYNotificationConst.h"
 #import "SKYRootViewController.h"
 
 static NSString * const rootViewControllerIdentifier = @"SKYRootViewControllerCell";
@@ -37,8 +37,13 @@ UITableViewDataSource
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self buildNotificationObserver];
     [self initUI];
     [self loadData];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - Layout Subviews
@@ -67,37 +72,12 @@ UITableViewDataSource
 #pragma mark - Load Data
 
 - (void)loadData {
-    // Request
-    AFHTTPSessionManager *manager = [SKYNetManager shareInstance];
-    __weak __typeof(self)weakSelf = self;
-    
     // 空判断
     if (self.feeds.count <= 0) {
         return;
     }
     
-    // GCD
-    dispatch_queue_t fetchFeedQueue = dispatch_queue_create("com.hikvision.GCDFetchFeed-OC.fetchfeed", DISPATCH_QUEUE_CONCURRENT);
-    dispatch_group_t group = dispatch_group_create();
-    for (int i = 0; i < self.feeds.count; i++) {
-        dispatch_group_enter(group);
-        SKYFeedModel *feedModel = self.feeds[i];
-        dispatch_async(fetchFeedQueue, ^{
-            [manager GET:feedModel.feedUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                weakSelf.feeds[i] = [weakSelf.feedStore updateFeedModelWithData:responseObject preModel:feedModel];
-                [weakSelf.tableView reloadData];
-                
-                dispatch_group_leave(group);
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                NSLog(@"Error: %@", error);
-                dispatch_group_leave(group);
-            }];
-        });
-    }
-    // 全部完成后执行事件
-    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        [weakSelf fetchedAllFeeds];
-    });
+    [[SKYNetManager shareInstance] fetchAllFeedsWithModelArray:self.feeds];
 }
 
 #pragma mark - UITableView DataSource
@@ -144,8 +124,21 @@ UITableViewDataSource
 
 #pragma mark - Private Methods
 
+- (void)buildNotificationObserver {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchOneFeed:) name:NetworkingFetchOneFeedCompleteNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchAllFeeds:) name:NetworkingFetchAllFeedsCompleteNotification object:nil];
+}
+
+// 抓完一个 feed
+- (void)fetchOneFeed:(NSNotification *)notification {
+    NSString *indexString = [notification.userInfo objectForKey:@"index"];
+    NSUInteger index = indexString.integerValue;
+    self.feeds[index] = [SKYNetManager shareInstance].feeds[index];
+    [self.tableView reloadData];
+}
+
 // 抓完所有的 feeds
-- (void)fetchedAllFeeds {
+- (void)fetchAllFeeds:(NSNotification *)notification {
     NSLog(@"fetch complete");
 }
 

@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SKYNetManager : AFHTTPSessionManager
 
+@property (nonatomic, strong) NSMutableArray *feeds;
+
 + (instancetype)shareInstance;
+- (void)fetchAllFeedsWithModelArray:(NSArray *)modelArray;
 
 @end
 
